@@ -39,9 +39,7 @@ public class spawn : MonoBehaviour
         types.Add(3, Tuple.Create(90, new Color32(94, 255, 110, 255), 4));
         types.Add(4, Tuple.Create(100, new Color32(138, 255, 244, 255), 5));
 
-        // ----------------------------
-        // TEACHING MODE (minimal)
-        // ----------------------------
+        // Teaching Mode
         if (teaching_mode)
         {
             int offset = 400;
@@ -82,9 +80,7 @@ public class spawn : MonoBehaviour
             return; // skip normal spawning
         }
 
-        // ----------------------------
-        // NORMAL MODE (unchanged)
-        // ----------------------------
+        // Normal Mode
         for (int i = 0; i < num_balls; i++)
         {
             bool is_valid = false;
